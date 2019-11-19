@@ -40,5 +40,3 @@ management:
     health:
       show-details: always #默认是never
 
-text:
-  myname: zhangquan
