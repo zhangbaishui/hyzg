@@ -1,0 +1,44 @@
+server:
+  port: 12001
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          #指定配置文件的存放位置
+          search-locations: classpath:${config-location}
+      fail-fast: true #快速失败
+        #git:
+        #password:
+        #username:
+      #uri:
+
+  #springcloud中配置文件可以有3种存放方式:
+  #1.直接把配置文件存放每一个项目里面;
+  #2.集中存储到一个配置服务中;
+  #3.把配置文件存放到github或者开源中的码云等git仓库上.
+
+#客户端连接上了eureka服务端
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://hyzg:123456@localhost:11010/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    instance-id: ${spring.application.name}:${server.port}
+
+#actuator设置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" #暴露所有端点,默认是info和health
+  endpoint:
+    health:
+      show-details: always #默认是never
