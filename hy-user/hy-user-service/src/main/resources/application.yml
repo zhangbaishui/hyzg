@@ -1,0 +1,27 @@
+
+spring:
+  application:
+    name: hy-user
+  datasource:
+    url: jdbc:mysql://10.11.60.21:3306/hchina
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 10
+    driver-class-name: com.mysql.jdbc.Driver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://hyzg:123456@localhost:11010/eureka/
+#actuator设置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" #暴露所有端点,默认是info和health
+    endpoint:
+      health:
+        show-details: always
+server:
+  port: 8764
