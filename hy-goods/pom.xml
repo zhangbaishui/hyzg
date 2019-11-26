@@ -13,8 +13,8 @@
     <artifactId>hy-goods</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>hy-goods-interface</module>
-        <module>hy-goods-service</module>
+        <module>hy-good-interface</module>
+        <module>hy-good-service</module>
     </modules>
 
 

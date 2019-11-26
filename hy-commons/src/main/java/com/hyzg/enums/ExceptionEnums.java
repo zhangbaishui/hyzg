@@ -32,7 +32,10 @@ import lombok.NoArgsConstructor;
 public enum ExceptionEnums {
     USER_NOT_EXIST(3000,"该用户不存在"),
     PASS_NOT_RIGHT(4000,"该用户信息不存在"),
-    ;
+    CARTYPE_NOT_FOUND (5000,"车辆类型找不到") ,
+    GOODSTYPE_NOT_FOUND (6000,"商品种类找不到") ,
+    GOODSKIND_NOT_FOUND (7000,"商品类别找不到") ,
+    TRANSPORT_NOT_FOUND (8000,"线路类型找不到");
     private int code;
-    private  String msg;
+    private String msg;
 }

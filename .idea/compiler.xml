@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hy-good-service" />
+        <module name="hy-user-service" />
+        <module name="hy-zuul-server" />
+        <module name="hy-cars-interface" />
+        <module name="hy-cars-service" />
+        <module name="hy-config-server" />
+        <module name="hy-user-interface" />
+        <module name="hy-manager-service" />
+        <module name="hy-eureka-server" />
+        <module name="hy-commons" />
+        <module name="hy-good-interface" />
+        <module name="hy-manager-interface" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hy-cars" target="1.8" />
+      <module name="hy-cars-interface" target="1.8" />
+      <module name="hy-cars-service" target="1.8" />
+      <module name="hy-commons" target="1.8" />
+      <module name="hy-config-server" target="1.8" />
+      <module name="hy-eureka-server" target="1.8" />
+      <module name="hy-good-interface" target="1.8" />
+      <module name="hy-good-service" target="1.8" />
+      <module name="hy-goods" target="1.8" />
+      <module name="hy-goods-interface" target="1.8" />
+      <module name="hy-goods-service" target="1.8" />
+      <module name="hy-manager" target="1.8" />
+      <module name="hy-manager-interface" target="1.8" />
+      <module name="hy-manager-service" target="1.8" />
+      <module name="hy-user" target="1.8" />
+      <module name="hy-user-interface" target="1.8" />
+      <module name="hy-user-service" target="1.8" />
+      <module name="hy-zuul-server" target="1.8" />
+      <module name="hyzg" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hy-cars-interface" options="-parameters" />
+      <module name="hy-cars-service" options="-parameters" />
+      <module name="hy-commons" options="-parameters" />
+      <module name="hy-config-server" options="-parameters" />
+      <module name="hy-eureka-server" options="-parameters" />
+      <module name="hy-good-interface" options="-parameters" />
+      <module name="hy-good-service" options="-parameters" />
+      <module name="hy-goods-interface" options="-parameters" />
+      <module name="hy-goods-service" options="-parameters" />
+      <module name="hy-manager-interface" options="-parameters" />
+      <module name="hy-manager-service" options="-parameters" />
+      <module name="hy-user-interface" options="-parameters" />
+      <module name="hy-user-service" options="-parameters" />
+      <module name="hy-zuul-server" options="-parameters" />
+    </option>
+  </component>
+</project>
