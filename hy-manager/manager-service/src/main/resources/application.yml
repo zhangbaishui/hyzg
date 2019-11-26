@@ -1,0 +1,46 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: hy-manager
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://10.11.60.21:3306/hchina?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+
+#  datasource:
+#    url: jdbc:mysql://10.11.60.21:3306/hchina
+#    username: root
+#    password: root
+#    hikari:
+#      maximum-pool-size: 30
+#      minimum-idle: 10
+#  profiles:
+#    active: pro #对应的是某个(3种)环境的配置文件
+#  cloud:
+#    config:
+#      discovery:
+#        service-id: config-server #指定配置中心的服务名称
+#        enabled: true
+#      fail-fast: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://hyzg:123456@localhost:11010/eureka/
+#actuator设置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" #暴露所有端点,默认是info和health
+  endpoint:
+    health:
+      show-details: always #默认是never
+
+#日志等级的设置
+logging:
+  level:
+    root: info
+  #com.syc.security.Test: error

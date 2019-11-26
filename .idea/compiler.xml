@@ -13,11 +13,10 @@
         <module name="hy-config-server" />
         <module name="hy-user-interface" />
         <module name="hy-good-interface" />
-        <module name="hy-manager-service" />
         <module name="hy-cars-service" />
         <module name="hy-eureka-server" />
         <module name="hy-commons" />
-        <module name="hy-manager-interface" />
+        <module name="manager-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,13 +30,12 @@
       <module name="hy-good-service" target="1.8" />
       <module name="hy-goods" target="1.8" />
       <module name="hy-manager" target="1.8" />
-      <module name="hy-manager-interface" target="1.8" />
-      <module name="hy-manager-service" target="1.8" />
       <module name="hy-user" target="1.8" />
       <module name="hy-user-interface" target="1.8" />
       <module name="hy-user-service" target="1.8" />
       <module name="hy-zuul-server" target="1.8" />
       <module name="hyzg" target="1.8" />
+      <module name="manager-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -49,11 +47,10 @@
       <module name="hy-eureka-server" options="-parameters" />
       <module name="hy-good-interface" options="-parameters" />
       <module name="hy-good-service" options="-parameters" />
-      <module name="hy-manager-interface" options="-parameters" />
-      <module name="hy-manager-service" options="-parameters" />
       <module name="hy-user-interface" options="-parameters" />
       <module name="hy-user-service" options="-parameters" />
       <module name="hy-zuul-server" options="-parameters" />
+      <module name="manager-service" options="-parameters" />
     </option>
   </component>
 </project>

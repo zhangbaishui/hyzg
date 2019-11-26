@@ -1,4 +1,4 @@
-server:
-  port: 8763
+#server:
+#  port: 8763
 
 #数据库的连接配置

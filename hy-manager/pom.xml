@@ -13,9 +13,7 @@
     <artifactId>hy-manager</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>hy-manager-interface</module>
-        <module>hy-manager-service</module>
+        <module>manager-service</module>
     </modules>
-
 
 </project>

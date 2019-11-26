@@ -15,7 +15,6 @@
     <modules>
         <module>hy-cars-interface</module>
         <module>hy-cars-service</module>
-        <module>hy-cars-service</module>
     </modules>
 
 
